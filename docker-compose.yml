@@ -1,0 +1,10 @@
+agate:
+  ports:
+    - "1965:1965"
+  volumes:
+    - "./agate/gmi:/gmi"
+    - "./agate/.certificates:/app/.certificates"
+  environment:
+    - HOSTNAME=gem.rest # CHANGE THIS!
+    - LANG=en-US
+  image: "fuwn/agate:latest"
